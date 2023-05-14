@@ -1,0 +1,137 @@
+<!--live server : 실시간으로 바꿔줌(새로고침 필요없음)-->
+<!--go live 끄면 서버연결 안됨-->
+<!--ipadress : 아이피 주소 알려줌-->
+<!--같은 와파라면 아이피주소:포트 검색창에 치면 사이트뜸-->
+ <!--인클루드 아이오스트림같은거임-->
+   <!--앞에 있는게 우선순위 #을 붙이면 우선순위가 달라짐-->
+  <style>
+    body{
+      margin:0;
+    }
+    a{
+      color:hotpink;
+      text-decoration: none;
+    
+    }
+    #active {
+      color:palevioletred;
+    }
+    .saw {
+      color:palevioletred;
+    }
+    h1{ /*가로선*/
+      font-size:45px;
+      text-align: center;
+      border-bottom:10px solid hotpink;
+      margin:0;
+      padding:20px;
+    }
+    ol{ /*새로선*/
+      border-right:10px solid hotpink;
+      width:100px;
+      margin:0;
+      padding: 40px;
+    }
+  </style> <!--css selecter 문장 색깔구ㅗ 찾는거임--><!--css text-align property: 문서구조? 참고사이트--><!--텍스트데코레이션 : 밑줄이 보기 싫을때-->
+ </head>
+
+ <body> <!--style="color:red; text-decoration:underline" : 외부사이트 선강조하는거-->  
+    <h1><a href="국가기밀.html">수연이의 기록</a> </h1>
+  <ol> 
+    <li> <h2><a href="1치킨.html" class="saw">과제자료</a></h2> </li>
+    <li> <h2><a href="2피자.html" class="saw">코딩공부</a></h2> </li>
+    <li> <h2><a href="3떡볶이.html" class="saw" id="active">전공공부</a></h2> </li>
+  </ol>
+  <!--<h1><a href="국가기밀.html"><font color="red">먹고 싶은 음식</font></a> </h1>
+  <ol>
+    <li> <a href="1.치킨.html"><font color="pink">치킨</font></a> </li>
+    <li> <a href="2.피자.html"><font color="blue">피자</font></a> </li>
+    <li> <a href="3.떡볶이.html"><font color="red">떡볶이</font></a> </li>
+  </ol>-->
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h2>주요일정</h2>
+  <ul>
+    <li><a href="달력.html" class="saw" id="active" style="color:red; text-decoration:underline">캘린더</a></li>
+  </ul>
+  <fieldset><!--벨류 옆에 checked 붙이기-->
+    <legend>(중요)해야할 일</legend>
+    <div>
+      <input type="checkbox" id="edu" name="interest" value="edu"/>
+      <label for="edu">교육튜터 연수 5월 13일</label>
+    </div>
+    <div>
+      <input type="checkbox" id="lab" name="interest" value="lab" />
+      <label for="lab">HTML,CSS 제출 5월 14일</label>
+    </div>
+    <div>
+      <input type="checkbox" id="ee" name="interest" value="ee" />
+      <label for="ee">수업 발표 제출 6월 01일</label>
+    </div>
+  </fieldset>
+
+  <!--<table>
+    <tr>
+        <td>교육튜터 연수</td>
+        <td>5월 13일</td>
+    </tr>
+    <tr>
+        <td>HTML,CSS 제출</td>
+        <td>5월 14일</td>
+    </tr>
+    <tr>
+        <td>교육공학 발표</td>
+        <td>6월 01일</td>
+    </tr>
+  </table>-->
+  &nbsp;
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h2>MY Hobby,Bucket list</h2>
+  <!--<p>경기도 <a href= https://namu.wiki/w/%EC%9A%A9%EC%9D%B8%EC%8B%9C target="_blank" title="환상용인">용인시</a> 처인구 포곡읍에 위치한 <strong>대한민국 <u>최대규모</u>의 테마파크</strong>다.</p>-->
+  <p>1.가고싶은 해외 여행지</p>
+  <img src="미국디즈니랜드.jpg" width="500">
+  <p>DISNEY LAND</p>
+  <img src="유니버셜스튜디오.jpg" width="500">
+  <p>UNIVERSAL STUDIO</p>
+  <!--<p style="margin-top:45px"> 방학에 해야할 일 : 교육봉사</p>-->
+  <br>
+  <br>
+  <p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/BOqFRHCrN-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </p>
+    2.엘리멘탈 보러가기 
+  <p>
+    <div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://gukgagimil.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </p>
+</body>
+</html>
+<!--discuss: 사이트알려줌-->
